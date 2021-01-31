@@ -34,7 +34,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.get('/', (req,res) => {
     console.log('this is working')
-    res.json(database.users)
+    res.json("it is working")
 });
 app.post('/signin', (req,res) => {signin.handleSignin(req, res, db, bcrpyt)})
 app.post('/register', (req,res) => {register.handleRegister(req,res, db, bcrpyt)})
